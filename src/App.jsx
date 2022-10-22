@@ -20,7 +20,7 @@ import './styles.css'
 function Elephant({ wireframe = false, invert = true, ...props }) {
   const group = useRef()
   const stencil = useMask(1, invert)
-  const { nodes, materials } = useGLTF('/bblocks-elephpant.gltf')
+  const { nodes, materials } = useGLTF('./bblocks-elephpant.gltf')
   const { anim } = useControls({
     anim: false
   })
@@ -35,7 +35,7 @@ function Elephant({ wireframe = false, invert = true, ...props }) {
     </group>
   )
 }
-useGLTF.preload('/bblocks-elephpant.gltf')
+useGLTF.preload('./bblocks-elephpant.gltf')
 
 function Box({ args = [1, 4, 1], radius = 0.05, smoothness = 4, color = 'white', wireframe = false, invert = true, ...boxProps }) {
   const boxRef = useRef()
