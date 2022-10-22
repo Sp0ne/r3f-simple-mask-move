@@ -1,0 +1,56 @@
+{
+  "name": "r3f-mask-move-mouse",
+  "version": "0.1.0",
+  "description": "r3f react-three-fiber mask move mouse three.js",
+  "private": false,
+  "author": "vinces.io",
+  "license": "MIT",
+  "keywords": [
+    "three.js",
+    "r3f",
+    "react-three-fiber",
+    "mouse",
+    "mask"
+  ],
+  "main": "src/index.js",
+  "type": "module",
+  "engines": {
+    "node": "16.x"
+  },
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint --fix --ext .js,jsx,json --ignore-path .gitignore .",
+    "format": "prettier -w -u .",
+    "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {
+    "@react-three/drei": "latest",
+    "@react-three/fiber": "latest",
+    "leva": "0.9.31",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "three": "0.145.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0",
+    "@types/three": "0.144.0",
+    "@vitejs/plugin-react": "^2.1.0",
+    "eslint": "^8.24.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.31.8",
+    "prettier": "^2.7.1",
+    "vite": "^3.1.6",
+    "vite-plugin-glsl": "^0.4.0"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
