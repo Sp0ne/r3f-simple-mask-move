@@ -14,5 +14,5 @@ export default defineConfig({
   server: {
     port: 3000
   },
-  plugins: [react(), glsl()]
+  plugins: [react(), glsyal()]
 })
