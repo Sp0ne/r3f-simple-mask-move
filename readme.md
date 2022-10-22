@@ -2,7 +2,8 @@
 
 _Simple Experience Three.js with R3F and Mask / Stencil._
 
-🧪 **v0.1.0** **〢** 🖥 [Live Demo](https://sp0ne.github.io/r3f-simple-mask-move/)
+🧪 **v0.1.0** **〢**
+🖥 [Live Demo](https://sp0ne.github.io/r3f-simple-mask-move/) **〢** [Codesandbox](https://codesandbox.io/s/r3f-mask-move-mouse-ttmtem)
 
 ---
 
