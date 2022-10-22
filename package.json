@@ -23,7 +23,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint --fix --ext .js,jsx,json --ignore-path .gitignore .",
+    "lint": "eslint -c eslint.config.json --fix --ext .js,jsx,json .",
     "format": "prettier -w -u .",
     "predeploy": "vite build",
     "deploy": "gh-pages -d dist"
@@ -37,7 +37,6 @@
     "three": "0.145.0"
   },
   "devDependencies": {
-    "gh-pages": "^4.0.0",
     "@types/three": "0.144.0",
     "@vitejs/plugin-react": "^2.1.0",
     "eslint": "^8.24.0",
@@ -45,6 +44,7 @@
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.31.8",
+    "gh-pages": "^4.0.0",
     "prettier": "^2.7.1",
     "vite": "^3.1.6",
     "vite-plugin-glsl": "^0.4.0"

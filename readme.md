@@ -6,12 +6,6 @@ _Simple Experience Three.js with R3F and Mask / Stencil._
 
 ---
 
-![languages top](https://img.shields.io/github/languages/top/Sp0ne/r3f-simple-mask-move?color=56BEB8)
-![languages count](https://img.shields.io/github/languages/count/Sp0ne/r3f-simple-mask-move?color=56BEB8)
-![languages count](https://img.shields.io/github/last-commit/Sp0ne/r3f-simple-mask-move?color=56BEB8)
-
----
-
 ![Screen Starter](public/screenshots/r3f-mask-mouse.gif)
 
 ---
@@ -31,7 +25,7 @@ yarn
 ```shell
 yarn start
 # Or
-yarn build
+yarn preview
 ```
 
 👉 Go to [http://localhost:3000/r3f-simple-mask-move/](http://localhost:3000/r3f-simple-mask-move/)
@@ -46,7 +40,7 @@ yarn format      # Run prettier format
 ## 🚀 Deploy on Gh-pages
 
 ```shell
-yarn deploy
+yarn build && yarn deploy
 # yarn deploy -- -m "Deploy to GitHub Pages"
 ```
 
@@ -56,8 +50,7 @@ Change config in `vite.config.vue` if you want:
 
 ```javascript
 export default defineConfig({
-  base: '/r3f-simple-mask-move/', // Remove or Adapt it ! (it's just for GH-PAGES)
-  // ...stuff...
+  base: '/r3f-simple-mask-move/', // Adapt it ! (just for GH-PAGES)
   server: {
     port: 3000 // Default 3000: Adapt it !
   }
@@ -88,7 +81,6 @@ yarn upgrade-interactive --latest
 - [`leva`](https://github.com/pmndrs/leva) &ndash; create GUI controls in seconds
 - [`gltf-viewer`](https://gltf.pmnd.rs/) Gltf Viwver / converter
 - [`mixamo`](https://www.mixamo.com) Animation library
-
 - ...
 
 ---

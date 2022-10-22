@@ -22,7 +22,7 @@ function Elephant({ wireframe = false, invert = true, ...props }) {
   const stencil = useMask(1, invert)
   const { nodes, materials } = useGLTF('./bblocks-elephpant.gltf')
   const { anim } = useControls({
-    anim: false
+    anim: true
   })
   useFrame(() => {
     if (anim) group.current.rotation.y = group.current.rotation.y += 0.01
@@ -41,7 +41,7 @@ function Box({ args = [1, 4, 1], radius = 0.05, smoothness = 4, color = 'white',
   const boxRef = useRef()
   const stencil = useMask(1, invert)
   const { anim } = useControls({
-    anim: false
+    anim: true
   })
   useFrame(() => {
     if (anim) boxRef.current.rotation.y = boxRef.current.rotation.y += 0.01
