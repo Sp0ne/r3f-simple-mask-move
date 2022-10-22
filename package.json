@@ -5,6 +5,7 @@
   "private": false,
   "author": "vinces.io",
   "license": "MIT",
+  "homepage": "https://sp0ne.github.io/r3f-simple-mask-move/",
   "keywords": [
     "three.js",
     "r3f",
@@ -24,6 +25,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint --fix --ext .js,jsx,json --ignore-path .gitignore .",
     "format": "prettier -w -u .",
+    "predeploy": "vite build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {

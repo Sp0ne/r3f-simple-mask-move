@@ -47,6 +47,7 @@ yarn format      # Run prettier format
 
 ```shell
 yarn deploy
+# yarn deploy -- -m "Deploy to GitHub Pages"
 ```
 
 ### ⚙️ Config vite ⚡
