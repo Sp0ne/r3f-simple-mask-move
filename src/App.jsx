@@ -78,20 +78,14 @@ function PlaneMask({ colorWrite, ...props }) {
   return (
     <group ref={ref} position={[0, 0, 4]} onClick={() => click(!clicked)}>
       <Mask id={1} colorWrite={colorWrite} depthWrite={false}>
-        {(spread) => (
-          <>
-            {clicked ? <planeGeometry args={[1, 1, 32, 32]} {...props} /> : <circleGeometry args={[0.5, 32]} {...props} />}
-            {distortMask ? (
-              <MeshDistortMaterial color={'#1d0b40'} distort={0.4} radius={1} speed={5} {...spread} />
-            ) : (
-              <meshStandardMaterial color={'#1d0b40'} {...spread} />
-            )}
-            {/* 
-            <planeGeometry args={[0.5, 0.5, 32, 32]} {...props} /> 
-            <meshStandardMaterial color={'#1d0b40'} {...spread} />
-            */}
-          </>
-        )}
+        {/*<planeGeometry args={[1, 1, 32, 32]} {...props} />
+        <meshStandardMaterial color={'#1d0b40'} />*/}
+          {clicked ? <planeGeometry args={[1, 1, 32, 32]} {...props} /> : <circleGeometry args={[0.5, 32]} {...props} />}
+          {distortMask ? (
+              <MeshDistortMaterial color={'#1d0b40'} distort={0.4} radius={1} speed={5} />
+          ) : (
+              <meshStandardMaterial color={'#1d0b40'}/>
+          )}
       </Mask>
     </group>
   )
@@ -121,7 +115,7 @@ function App() {
           </Suspense>
           <Environment preset="city" />
           <ContactShadows position={[0, -2, 0]} opacity={0.4} scale={10} blur={2.5} far={4} />
-          {orbitcontrols && <OrbitControls makeDefault />}
+          {orbitcontrols && <OrbitControls />}
         </Canvas>
       </div>
       <footer className="footer">

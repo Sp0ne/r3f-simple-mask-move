@@ -74,15 +74,10 @@ yarn upgrade-interactive --latest
 - Three.js [**v0.145.0**](https://github.com/mrdoob/three.js/) 📦
 - Powered with [Vite](https://vite.dev/) 📦
 - [vite-plugin-glsl](https://github.com/UstymUkhman/vite-plugin-glsl) Simple Shaders support (glsl) 🎨
-- [`docs.pmnd.rs`](https://docs.pmnd.rs/) Documentation Poimandres
-- [`@react-three/fiber`](https://github.com/pmndrs/react-three-fiber) React renderer for threejs
-- [`@react-three/gltfjsx`](https://github.com/pmndrs/gltfjsx) &ndash; turns GLTFs into JSX components
-- [`@react-three/drei`](https://github.com/pmndrs/drei) &ndash; useful helpers for react-three-fiber
-- [`react-spring`](https://github.com/pmndrs/react-spring) &ndash; a spring-physics-based animation library
-- [`leva`](https://github.com/pmndrs/leva) &ndash; create GUI controls in seconds
-- [`gltf-viewer`](https://gltf.pmnd.rs/) Gltf Viwver / converter
-- [`mixamo`](https://www.mixamo.com) Animation library
-- ...
+- [@react-three/fiber](https://github.com/pmndrs/react-three-fiber) React renderer for threejs
+- [@react-three/drei](https://github.com/pmndrs/drei) useful helpers for react-three-fiber
+- [react-spring](https://github.com/pmndrs/react-spring) a spring-physics-based animation library
+- [leva`](https://github.com/pmndrs/leva) create GUI controls in seconds
 
 ---
 
